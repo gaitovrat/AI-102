@@ -1,18 +1,14 @@
 # Prerequivistes
 In Azure you should create:
-1. Search Service.
-1. Azure AI Hub.
+1. Azure Foundry.
 
 In Foundry you should create:
 1. `gpt-4o` model deployment.
-1. `text-embedding-ada-002` model deployment.
-1. Data is uploaded.
-1. Index is created with data, search service and `text-embedding-ada-002` model deployment.
 
 # How to run
 ## Create virutla environment
 ```sh
-python -m venv ragvenv; source ./ragvenv/bin/activate; pip install -r requirements.txt openai
+python -m venv chatvenv; source ./chatvenv/bin/activate; pip install -r requirements.txt azure-identity azure-ai-projects openai
 ```
 
 ## Fill .env
