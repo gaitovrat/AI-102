@@ -1,6 +1,6 @@
 # Prerequivistes
-In Azure you should create:
-1. Azure Foundry.
+In Foundry you should create:
+1. Azure Foundry Agent.
 
 # How to run
 ## Create virutla environment
@@ -14,5 +14,5 @@ python -m venv labvenv; source ./labvenv/bin/activate; pip install -r requiremen
 
 ## Run
 ```sh
-python agent.py
+python agent_triage.py
 ```
