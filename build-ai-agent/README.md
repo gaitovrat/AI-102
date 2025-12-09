@@ -9,7 +9,7 @@ python -m venv labvenv; source ./labvenv/bin/activate; pip install -r requiremen
 ```
 
 ## Fill .env
-- `PROJECT_ENDPOINT`: Azure Found project endpoint.
+- `PROJECT_ENDPOINT`: Azure Foundry project endpoint.
 - `MODEL_DEPLOYMENT_NAME`: Deployed model name.
 
 ## Run

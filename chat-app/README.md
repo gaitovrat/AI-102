@@ -12,7 +12,7 @@ python -m venv chatvenv; source ./chatvenv/bin/activate; pip install -r requirem
 ```
 
 ## Fill .env
-- `PROJECT_ENDPOINT`: Azure Found project endpoint.
+- `PROJECT_ENDPOINT`: Azure Foundry project endpoint.
 - `MODEL_DEPLOYMENT`: Deployed model name.
 
 ## Run
