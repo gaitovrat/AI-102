@@ -9,7 +9,7 @@ Orchestrated multi-agent system where a primary triage agent delegates tasks to 
 ## Four Agents
 
 **1. Priority Agent** - Assesses urgency (High/Medium/Low)
-**2. Team Agent** - Assigns to team (Frontend/Backend/Infrastructure/Marketing)  
+**2. Team Agent** - Assigns to team (Frontend/Backend/Infrastructure/Marketing)
 **3. Effort Agent** - Estimates work (Small/Medium/Large)
 **4. Triage Agent** - Orchestrates the three specialized agents
 

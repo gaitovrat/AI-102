@@ -1,0 +1,15 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-yaml
+        name: Check YAML files for syntax errors
+      - id: end-of-file-fixer
+        name: Makes sure files end in a newline and only a newline.
+      - id: trailing-whitespace
+        name: Trims trailing whitespace.
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.14.8
+    hooks:
+    - id: ruff-format
+      name: Format code with Ruff

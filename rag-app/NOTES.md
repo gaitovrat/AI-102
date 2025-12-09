@@ -71,7 +71,7 @@ Final Response to User
 
 ### Key Reasons for This Architecture
 
-1. **Efficiency**: 
+1. **Efficiency**:
    - Embedding models are optimized for fast vector generation
    - GPT-4o is optimized for reasoning and text generation
    - Using the right tool for each job improves performance

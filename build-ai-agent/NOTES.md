@@ -17,4 +17,3 @@ Azure AI Agents with Code Interpreter tool for data analysis. Agent executes Pyt
 
 ## Workflow
 Upload file → Create agent → Create thread → Loop (prompt → process → response) → Show history → Cleanup
-

@@ -7,34 +7,39 @@ from pathlib import Path
 # Add references
 from azure.identity import DefaultAzureCredential
 from azure.ai.agents import AgentsClient
-from azure.ai.agents.models import FilePurpose, CodeInterpreterTool, ListSortOrder, MessageRole
+from azure.ai.agents.models import (
+    FilePurpose,
+    CodeInterpreterTool,
+    ListSortOrder,
+    MessageRole,
+)
 
 
-def main(): 
-
+def main():
     # Clear the console
-    os.system('cls' if os.name=='nt' else 'clear')
+    os.system("cls" if os.name == "nt" else "clear")
 
     # Load environment variables from .env file
     load_dotenv()
-    project_endpoint= os.getenv("PROJECT_ENDPOINT")
+    project_endpoint = os.getenv("PROJECT_ENDPOINT")
     model_deployment = os.getenv("MODEL_DEPLOYMENT_NAME")
 
     # Display the data to be analyzed
     script_dir = Path(__file__).parent  # Get the directory of the script
-    file_path = script_dir / 'data.txt'
+    file_path = script_dir / "data.txt"
 
-    with file_path.open('r') as file:
+    with file_path.open("r") as file:
         data = file.read() + "\n"
         print(data)
 
     # Connect to the Agent client
     agent_client = AgentsClient(
         endpoint=project_endpoint,
-        credential=DefaultAzureCredential
-            (exclude_environment_credential=True,
-                exclude_managed_identity_credential=True)
-        )
+        credential=DefaultAzureCredential(
+            exclude_environment_credential=True,
+            exclude_managed_identity_credential=True,
+        ),
+    )
     with agent_client:
         # Upload the data file and create a CodeInterpreterTool
         file = agent_client.files.upload_and_poll(
@@ -54,10 +59,9 @@ def main():
         )
         print(f"Using agent: {agent.name}")
 
-
         # Create a thread for the conversation
         thread = agent_client.threads.create()
-    
+
         # Loop until the user types 'quit'
         while True:
             # Get input text
@@ -75,12 +79,14 @@ def main():
                 content=user_prompt,
             )
 
-            run = agent_client.runs.create_and_process(thread_id=thread.id, agent_id=agent.id)
+            run = agent_client.runs.create_and_process(
+                thread_id=thread.id, agent_id=agent.id
+            )
 
             # Check the run status for failures
             if run.status == "failed":
                 print(f"Run failed: {run.last_error}")
-    
+
             # Show the latest response from the agent
             last_msg = agent_client.messages.get_last_message_text_by_role(
                 thread_id=thread.id,
@@ -89,10 +95,11 @@ def main():
             if last_msg:
                 print(f"Last Message: {last_msg.text.value}")
 
-
         # Get the conversation history
         print("\nConversation Log:\n")
-        messages = agent_client.messages.list(thread_id=thread.id, order=ListSortOrder.ASCENDING)
+        messages = agent_client.messages.list(
+            thread_id=thread.id, order=ListSortOrder.ASCENDING
+        )
         for message in messages:
             if message.text_messages:
                 last_msg = message.text_messages[-1]
@@ -102,5 +109,5 @@ def main():
         agent_client.delete_agent(agent.id)
 
 
-if __name__ == '__main__': 
+if __name__ == "__main__":
     main()

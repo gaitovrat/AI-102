@@ -16,9 +16,8 @@ model_deployment = os.getenv("MODEL_DEPLOYMENT_NAME")
 agents_client = AgentsClient(
     endpoint=project_endpoint,
     credential=DefaultAzureCredential(
-        exclude_environment_credential=True,
-        exclude_managed_identity_credential=True
-    )
+        exclude_environment_credential=True, exclude_managed_identity_credential=True
+    ),
 )
 
 
@@ -45,11 +44,10 @@ with agents_client:
         model=model_deployment,
         name="my-mcp-agent",
         instructions="""
-        You have access to an MCP server called `microsoft.docs.mcp` - this tool allows you to 
-        search through Microsoft's latest official documentation. Use the available MCP tools 
-        to answer questions and perform tasks."""
+        You have access to an MCP server called `microsoft.docs.mcp` - this tool allows you to
+        search through Microsoft's latest official documentation. Use the available MCP tools
+        to answer questions and perform tasks.""",
     )
-    
 
     # Log info
     print(f"Created agent, ID: {agent.id}")
@@ -67,12 +65,14 @@ with agents_client:
         content=prompt,
     )
     print(f"Created message, ID: {message.id}")
-    
+
     # Set approval mode
     mcp_tool.set_approval_mode("never")
 
     # Create and process agent run in thread with MCP tools
-    run = agents_client.runs.create_and_process(thread_id=thread.id, agent_id=agent.id, toolset=toolset)
+    run = agents_client.runs.create_and_process(
+        thread_id=thread.id, agent_id=agent.id, toolset=toolset
+    )
     print(f"Created run, ID: {run.id}")
 
     # Check run status
@@ -100,7 +100,9 @@ with agents_client:
         print()  # add an extra newline between steps
 
     # Fetch and log all messages
-    messages = agents_client.messages.list(thread_id=thread.id, order=ListSortOrder.ASCENDING)
+    messages = agents_client.messages.list(
+        thread_id=thread.id, order=ListSortOrder.ASCENDING
+    )
     print("\nConversation:")
     print("-" * 50)
     for msg in messages:
