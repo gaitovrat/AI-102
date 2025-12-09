@@ -17,5 +17,5 @@ python -m venv chatvenv; source ./chatvenv/bin/activate; pip install -r requirem
 
 ## Run
 ```sh
-python rag-app.py
+python chat-app.py
 ```
