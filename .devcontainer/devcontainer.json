@@ -10,5 +10,6 @@
       		"packages": "ca-certificates"
     	},
 		"./corporate-env": {}
-	}
+	},
+	"postCreateCommand": "pre-commit install"
 }
