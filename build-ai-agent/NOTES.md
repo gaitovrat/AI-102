@@ -6,7 +6,6 @@ Azure AI Agents with Code Interpreter tool for data analysis. Agent executes Pyt
 ## Configuration
 - `PROJECT_ENDPOINT`: Azure Foundry endpoint
 - `MODEL_DEPLOYMENT_NAME`: GPT-4o deployment
-- **Dependencies**: `azure-identity`, `azure-ai-agents`, `azure-ai-projects`, `python-dotenv`
 
 ## Agent vs Chat API
 | Feature | Agent | Chat Completions |
