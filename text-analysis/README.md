@@ -1,9 +1,9 @@
-# Prerequivistes
+# Prerequisites
 In Azure you should create:
 1. Language Service.
 
 # How to run
-## Create virutla environment
+## Create virtual environment
 ```sh
 python -m venv labvenv; source ./labvenv/bin/activate; pip install -r requirements.txt azure-ai-textanalytics==5.3.0
 ```

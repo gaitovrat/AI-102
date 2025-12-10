@@ -1,9 +1,9 @@
-# Prerequivistes
+# Prerequisites
 In Foundry you should create:
 1. Azure Foundry Agent.
 
 # How to run
-## Create virutla environment
+## Create virtual environment
 ```sh
 python -m venv labvenv; source ./labvenv/bin/activate; pip install -r requirements.txt azure-ai-projects azure-ai-agents
 ```

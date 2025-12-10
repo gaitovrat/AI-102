@@ -1,4 +1,4 @@
-# Prerequivistes
+# Prerequisites
 In Azure you should create:
 1. Azure Foundry.
 
@@ -6,7 +6,7 @@ In Foundry you should create:
 1. `gpt-4o` model deployment.
 
 # How to run
-## Create virutla environment
+## Create virtual environment
 ```sh
 python -m venv chatvenv; source ./chatvenv/bin/activate; pip install -r requirements.txt azure-identity azure-ai-projects openai
 ```

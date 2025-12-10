@@ -1,4 +1,4 @@
-# Prerequivistes
+# Prerequisites
 In Azure you should create:
 1. Search Service.
 1. Azure AI Hub.
@@ -10,7 +10,7 @@ In Foundry you should create:
 1. Index is created with data, search service and `text-embedding-ada-002` model deployment.
 
 # How to run
-## Create virutla environment
+## Create virtual environment
 ```sh
 python -m venv ragvenv; source ./ragvenv/bin/activate; pip install -r requirements.txt openai
 ```
