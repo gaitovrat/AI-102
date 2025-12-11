@@ -1,7 +1,7 @@
 {
 	"folders": [
 		{
-			"name": "AI-102 Root",
+			"name": "Root",
 			"path": "."
 		},
 		{
@@ -67,6 +67,10 @@
 		{
 			"name": "Test Classifier",
 			"path": "./test-classifier"
+		},
+		{
+			"name": "Gen AI Vision",
+			"path": "./gen-ai-vision"
 		}
 	],
 	"settings": {
