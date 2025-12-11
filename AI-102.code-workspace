@@ -1,0 +1,72 @@
+{
+	"folders": [
+		{
+			"name": "AI-102 Root",
+			"path": "."
+		},
+		{
+			"name": "Agent Framework",
+			"path": "./agent-framework",
+		},
+		{
+			"name": "Build AI Agent",
+			"path": "./build-ai-agent"
+		},
+		{
+			"name": "Build Multi-Agent Solution",
+			"path": "./build-multi-agent-solution"
+		},
+		{
+			"name": "Chat App",
+			"path": "./chat-app"
+		},
+		{
+			"name": "Classify Text",
+			"path": "./classify-text"
+		},
+		{
+			"name": "QnA App",
+			"path": "./qna-app"
+		},
+		{
+			"name": "RAG App",
+			"path": "./rag-app"
+		},
+		{
+			"name": "Speaking Clock",
+			"path": "./speaking-clock"
+		},
+		{
+			"name": "Text Analysis",
+			"path": "./text-analysis"
+		},
+		{
+			"name": "Agent Tools with MCP",
+			"path": "./use-agent-tools-with-mcp"
+		},
+		{
+			"name": "Audio Chat",
+			"path": "./audio-chat"
+		},
+		{
+			"name": "Image Analysis",
+			"path": "./image-analysis"
+		}
+	],
+	"settings": {
+		"python.defaultInterpreterPath": "${workspaceFolder}/venv/bin/python",
+		"python.terminal.activateEnvironment": true,
+		"python.terminal.activateEnvInCurrentTerminal": true,
+		"files.exclude": {
+			"**/__pycache__": true,
+			"**/*.pyc": true,
+			"**/.pytest_cache": true,
+			"**/.mypy_cache": true,
+			"**/venv": false
+		},
+		"search.exclude": {
+			"**/venv": true,
+			"**/__pycache__": true
+		}
+	},
+}
