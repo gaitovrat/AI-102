@@ -12,7 +12,7 @@ In Foundry you should create:
 # How to run
 ## Create virtual environment
 ```sh
-python -m venv ragvenv; source ./ragvenv/bin/activate; pip install -r requirements.txt
+python -m venv venv; source ./venv/bin/activate; pip install -r requirements.txt
 ```
 
 ## Fill .env

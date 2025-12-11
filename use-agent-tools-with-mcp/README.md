@@ -5,7 +5,7 @@ In Foundry you should create:
 # How to run
 ## Create virtual environment
 ```sh
-python -m venv labvenv; source ./labvenv/bin/activate; pip install --pre -r requirements.txt
+python -m venv venv; source ./venv/bin/activate; pip install --pre -r requirements.txt
 ```
 
 ## Fill .env
