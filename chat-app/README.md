@@ -8,7 +8,7 @@ In Foundry you should create:
 # How to run
 ## Create virtual environment
 ```sh
-python -m venv chatvenv; source ./chatvenv/bin/activate; pip install -r requirements.txt azure-identity azure-ai-projects openai
+python -m venv chatvenv; source ./chatvenv/bin/activate; pip install -r requirements.txt
 ```
 
 ## Fill .env

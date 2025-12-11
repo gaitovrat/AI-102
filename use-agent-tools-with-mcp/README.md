@@ -5,7 +5,7 @@ In Foundry you should create:
 # How to run
 ## Create virtual environment
 ```sh
-python -m venv labvenv; source ./labvenv/bin/activate; pip install -r requirements.txt --pre azure-ai-projects azure-ai-agents mcp
+python -m venv labvenv; source ./labvenv/bin/activate; pip install --pre -r requirements.txt
 ```
 
 ## Fill .env

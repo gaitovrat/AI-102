@@ -12,7 +12,7 @@ In Foundry you should create:
 # How to run
 ## Create virtual environment
 ```sh
-python -m venv ragvenv; source ./ragvenv/bin/activate; pip install -r requirements.txt openai
+python -m venv ragvenv; source ./ragvenv/bin/activate; pip install -r requirements.txt
 ```
 
 ## Fill .env

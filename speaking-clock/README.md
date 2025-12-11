@@ -5,7 +5,7 @@ In Azure you should create:
 # How to run
 ## Create virtual environment
 ```sh
-python -m venv labvenv; source ./labvenv/bin/activate; pip install -r requirements.txt azure-cognitiveservices-speech==1.42.0
+python -m venv labvenv; source ./labvenv/bin/activate; pip install -r requirements.txt
 ```
 
 ## Fill .env

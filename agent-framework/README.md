@@ -8,7 +8,7 @@ In Project you should create:
 # How to run
 ## Create virtual environment
 ```sh
-python -m venv labvenv; source ./labvenv/bin/activate; pip install azure-identity agent-framework
+python -m venv labvenv; source ./labvenv/bin/activate; pip install -r requirements.txt
 ```
 
 ## Fill .env
