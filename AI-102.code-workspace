@@ -56,6 +56,10 @@
 			"name": "Read Text",
 			"path": "./read-text"
 		},
+		{
+			"name": "Face API",
+			"path": "./face-api"
+		}
 	],
 	"settings": {
 		"python.defaultInterpreterPath": "${workspaceFolder}/venv/bin/python",
