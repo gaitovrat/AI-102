@@ -3,7 +3,6 @@
 ## Purpose
 Interactive audio-aware chat application using Azure AI Foundry's multimodal model.
 Processes audio content (MP3) alongside text prompts for context-aware Q&A.
-```
 
 ## Features
 - **Audio Source**: Remote MP3 file (GitHub-hosted avocados.mp3)
