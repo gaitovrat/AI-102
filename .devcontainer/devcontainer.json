@@ -11,5 +11,5 @@
     	},
 		"./corporate-env": {}
 	},
-	"postCreateCommand": "pre-commit install"
+	"postCreateCommand": ".devcontainer/post-create.sh"
 }
