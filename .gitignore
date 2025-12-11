@@ -5,3 +5,5 @@ output.wav
 .ruff_cache/
 objects.jpg
 people.jpg
+lines.jpg
+words.jpg

@@ -5,7 +5,7 @@ In Azure you should create:
 # How to run
 ## Create virtual environment
 ```sh
-python -m venv labvenv; source ./labvenv/bin/activate; pip install -r requirements.txt
+python -m venv venv; source ./venv/bin/activate; pip install -r requirements.txt
 ```
 
 ## Fill .env
@@ -14,5 +14,5 @@ python -m venv labvenv; source ./labvenv/bin/activate; pip install -r requiremen
 
 ## Run
 ```sh
-python image-analysis.py images/<image_file>
+python read-text.py images/<image_file>
 ```
