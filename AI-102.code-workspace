@@ -71,6 +71,10 @@
 		{
 			"name": "Gen AI Vision",
 			"path": "./gen-ai-vision"
+		},
+		{
+			"name": "DALLE Client",
+			"path": "./dalle-client"
 		}
 	],
 	"settings": {
