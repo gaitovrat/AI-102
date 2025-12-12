@@ -83,6 +83,10 @@
 		{
 			"name": "Prebuild Doc Intelligence",
 			"path": "./prebuilt-doc-intelligence"
+		},
+		{
+			"name": "Custom Doc Intelligence",
+			"path": "./custom-doc-intelligence"
 		}
 	],
 	"settings": {
