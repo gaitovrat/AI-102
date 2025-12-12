@@ -75,6 +75,10 @@
 		{
 			"name": "DALLE Client",
 			"path": "./dalle-client"
+		},
+		{
+			"name": "Content App",
+			"path": "./content-app"
 		}
 	],
 	"settings": {
