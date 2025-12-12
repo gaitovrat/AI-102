@@ -79,6 +79,10 @@
 		{
 			"name": "Content App",
 			"path": "./content-app"
+		},
+		{
+			"name": "Prebuild Doc Intelligence",
+			"path": "./prebuilt-doc-intelligence"
 		}
 	],
 	"settings": {
