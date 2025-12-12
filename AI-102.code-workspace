@@ -87,6 +87,10 @@
 		{
 			"name": "Custom Doc Intelligence",
 			"path": "./custom-doc-intelligence"
+		},
+		{
+			"name": "Knowledge Mining",
+			"path": "./knowledge"
 		}
 	],
 	"settings": {
