@@ -1,9 +1,0 @@
-{
-    "name": "Corporate environment",
-    "id": "corporate-env",
-    "version": "0.0.1",
-    "description": "This feature prepares the corporate environment by setting up necessary certificates and proxy configurations.",
-    "installsAfter": [
-        "ghcr.io/devcontainers-extra/features/apt-get-packages"
-    ]
-}

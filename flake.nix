@@ -24,12 +24,12 @@
 
           # Run your post-create script
           shellHook = ''
-            if [ -f .devcontainer/post-create.sh ]; then
-              echo "Running post-create script..."
-              source .devcontainer/post-create.sh
-            fi
+            alias python="python3.12"
+            alias pip="python -m pip"
+
+            echo "Running post-create script..."
+            source install.sh
           '';
         };
       });
 }
-
